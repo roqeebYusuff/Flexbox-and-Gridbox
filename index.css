@@ -1,0 +1,102 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: var(--fontDeca);
+    font-weight: 400;
+}
+
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --tWhite: hsla(0, 0%, 100%, 0.75);
+    --vlightGray: hsl(0, 0%, 95%);
+    --fontDeca: 'Lexend Deca', sans-serif;
+    --fontBigShoulders: 'Big Shoulders Display', cursive;
+}
+
+body{
+    background-color: var(--vlightGray);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.single__box{
+    position: relative;
+    padding: 3rem;
+    color: #fff;
+    width: 300px;
+    height: 420px;
+}
+
+.single__box:nth-child(1){
+    background-color: var(--brightOrange);
+}
+
+
+.single__box:nth-child(2){
+    background-color: var(--darkCyan);
+}
+
+.single__box:nth-child(3){
+    background-color: var(--veryDarkCyan);
+}
+
+.single__box img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.single__box h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: var(--fontBigShoulders);
+    font-weight: 700;
+    color: var(--vlightGray);
+}
+
+.single__box p{
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: var(--tWhite);
+}
+
+.single__box a{
+    background-color: var(--vlightGray);
+    border-radius: 35px;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    font-weight: 500;
+}
+
+.single__box:nth-child(1) a{
+    color: var(--brightOrange);
+}
+
+.single__box:nth-child(2) a{
+    color: var(--darkCyan);
+}
+
+.single__box:nth-child(3) a{
+    color: var(--veryDarkCyan);
+}

@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: none
+    'a a a b'
+    'e c c d'
+    ;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
