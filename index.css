@@ -1,5 +1,5 @@
-@import url(https://fonts.google.com/specimen/Lexend+Deca);
-@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -22,6 +22,21 @@
 body{
     background-color: var(--vlightGray);
 }
+
+.link{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+}
+
+.link a{
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    color: var(--veryDarkCyan);
+    border-radius: 5px;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -63,7 +78,7 @@ body{
 }
 
 .single__box h3{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-family: var(--fontBigShoulders);
